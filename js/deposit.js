@@ -1,11 +1,11 @@
 // step-1: add event listener to the deposit button
-document.getElementById('btn-deposit').addEventListener('click', function(){
+document.getElementById('btn-deposit').addEventListener('click', function () {
     // step-2: get the deposit amount from the deposit input field
     // for input field use .value to the value inside the input field
     const depositField = document.getElementById('deposit-field');
     const NewDepositAmountString = depositField.value;
     const NewDepositAmount = parseFloat(NewDepositAmountString);
-    
+
     // step-3: get the current deposit amount
     // for non-input (element other than input, textarea) use innerText to get the text
     const depositTotalElement = document.getElementById('deposit-total');
@@ -26,7 +26,6 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     const currentBalanceTotal = previousBalanceTotal + NewDepositAmount;
     // set the balance total
     balanceTotalElement.innerText = currentBalanceTotal;
-    
 
     // step-7: clear the deposit field
     depositField.value = '';
