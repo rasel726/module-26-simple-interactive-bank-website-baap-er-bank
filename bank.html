@@ -15,10 +15,10 @@
     </h1>
     <main>
         <section class="mt-12">
-            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto  text-white">
                 <div class="bg-green-600 p-8 rounded-xl">
                     <h4 class="text-2xl">Deposit</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
                 </div>
                 <div class="bg-yellow-500 p-8 rounded-xl">
                     <h4 class="text-2xl">Withdraw</h4>
@@ -32,11 +32,11 @@
         </section>
         <section class="mt-12">
             <!-- deposit and withdraw -->
-            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
                 <div class="bg-fuchsia-400 p-5 rounded-xl">
-                    <h4 class="text-2xl mb-4">Please Deposit</h4>
+                    <h4 class="text-2xl mb-4 text-white">Please Deposit</h4>
 
-                    <input class="w-9/12 block mb-2 px-3" type="email" name="" id="deposit-field"
+                    <input id="deposit-field" class="w-9/12 block mb-2 px-3" type="email" name=""
                         placeholder="$ Ammount you want to deposite" />
 
                     <button id="btn-deposit"
@@ -46,7 +46,7 @@
 
                 </div>
                 <div class="bg-indigo-300 p-5 rounded-xl">
-                    <h4 class="text-2xl mb-4">Please Withdraw</h4>
+                    <h4 class="text-2xl mb-4 text-white">Please Withdraw</h4>
                     <input class="block w-9/12 mb-2" type="text" placeholder="$ Ammount you want to withdraw">
                     <button id="btn-withdraw"
                         class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Withdraw</button>
@@ -54,6 +54,7 @@
             </div>
         </section>
     </main>
+    <script src="js/deposit.js"></script>
 </body>
 
 </html>
